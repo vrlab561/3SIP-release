@@ -164,7 +164,8 @@ We thank the authors of these projects for their efforts.
 	journal = {Computers & Graphics},
 	author = {Guo, Zihao and Zhao, Jingbo},
 	year = {2026},
-	pages = {104585}
+	pages = {104585},
+	}
 
 
 
