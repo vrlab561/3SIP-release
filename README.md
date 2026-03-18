@@ -149,7 +149,6 @@ Run eval.py to evaluate the model. Modify the variables from lines 20 to 33 acco
 To evaluate 3SIP with manually adjusted pose fusion weight, set `pretrained_3sip=False`; to evaluate 3SIP with automatically searched pose fusion weight, set `pretrained_3sip=True` and set `w_path_amass` (testing on AMASS or TotalCapture datasets) or `w_path_xsens` (testing on Xsens datasets) as the saved model path in training stage 3.
 
 ## License
-[![License: CC BY-NC 4.0](https://img.shields.io)](https://creativecommons.org)
 
 The majority of 3SIP code is licensed under CC-BY-NC 4.0, however portions of the project are available under separate license terms:
 - [AvatarPoser](https://github.com/eth-siplab/AvatarPoser), [AGRoL](https://github.com/facebookresearch/AGRoL), and [DynaIP](https://github.com/dx118/dynaip) are licensed under the MIT license;
