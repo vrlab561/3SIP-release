@@ -13,7 +13,7 @@ conda env create -f environment.yml
 conda activate 3SIP
 ```
 
-Download the [human_body_prior](https://github.com/nghorbani/human_body_prior/tree/master/src) lib and put them in this repo. The repo should look like
+Download the [human_body_prior](https://github.com/nghorbani/human_body_prior/tree/master/src) lib and put them in this repo. The repo should look like this:
 ```
 3SIP
 ├── human_body_prior/
@@ -34,7 +34,7 @@ Download the [human_body_prior](https://github.com/nghorbani/human_body_prior/tr
 ### SMPL models
 We used the smpl model, download it from [here](https://mano.is.tue.mpg.de/) (SMPL-H) and [here](https://smpl.is.tue.mpg.de/) (DMPLS and SMPL)  and place in  `./body_models/`.  Both .npz and .pkl format are needed.
 
-The body_models fold should look like this
+The body_models fold should look like this:
 ```
 ./body_models/
 ├── dmpls/
@@ -57,7 +57,7 @@ Please download the AMASS dataset from [here](https://amass.is.tue.mpg.de/). The
 ```
 python prepare_data.py --support_dir /path/to/your/smplh/dmpls --save_dir ./datasets/AMASSIMU/ --root_dir /path/to/your/amass/dataset
 ```
-The generated dataset should look like this
+The generated dataset should look like this:
 ```
 ./datasets/AMASSIMU/
 ├── BioMotionLab_NTroje/
@@ -83,7 +83,7 @@ We used the same datasets as [DynaIP](https://https://github.com/dx118/dynaip), 
 
 Place these datasets in `./datasets/raw/`.
 
-The xsens dataset folder should look like this
+The xsens dataset folder should look like this:
 ```
 ./datasets/
 ├── extract
@@ -104,7 +104,7 @@ Follow the steps below to process raw Xsens datasets.
 2. Run `process.py` to preprocess IMU data from the extracted Xsens datasets and the raw DIP-IMU dataset. 
 
 ### TotalCapture dataset
-Download TotalCapture dataset from [here](https://cvssp.org/data/totalcapture/). The TotalCapture dataset fold should look like this
+Download TotalCapture dataset from [here](https://cvssp.org/data/totalcapture/). The TotalCapture dataset fold should look like this:
 
 ```
 ./TotalCapture/
@@ -149,7 +149,7 @@ Run eval.py to evaluate the model. Modify the variables from lines 20 to 33 acco
 To evaluate 3SIP with manually adjusted pose fusion weight, set `pretrained_3sip=False`; to evaluate 3SIP with automatically searched pose fusion weight, set `pretrained_3sip=True` and set `w_path_amass` (testing on AMASS or TotalCapture datasets) or `w_path_xsens` (testing on Xsens datasets) as the saved model path in training stage 3.
 
 ## License
-![CC BY-NC 4.0][cc-by-nc-shield]
+[![License: CC BY-NC 4.0](https://img.shields.io)](https://creativecommons.org)
 
 The majority of 3SIP code is licensed under CC-BY-NC 4.0, however portions of the project are available under separate license terms:
 - [AvatarPoser](https://github.com/eth-siplab/AvatarPoser), [AGRoL](https://github.com/facebookresearch/AGRoL), and [DynaIP](https://github.com/dx118/dynaip) are licensed under the MIT license;
